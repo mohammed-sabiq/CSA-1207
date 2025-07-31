@@ -1,0 +1,10 @@
+LDA 8050  
+MOV B,A  
+LDA 8051  
+MOV C,A  
+MVI A,00  
+LOOP: ADD B  
+DCR C  
+JNZ LOOP  
+STA 8052  
+HLT
